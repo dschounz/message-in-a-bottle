@@ -141,7 +141,7 @@ shuffleArray(fbDataArray);
   }
 function shuffleArray(_array){
   // iterate backwards through an array
-for (let i = array.length - 1; i > 0; i--) {
+for (let i = _array.length - 1; i > 0; i--) {
 
   // grab random index from 0 to i
   let randomIndex = Math.floor(Math.random() * (i + 1));
