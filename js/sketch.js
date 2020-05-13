@@ -44,7 +44,7 @@ let config = {
     projectId: "messageinabottle-d4dd4",
     storageBucket: "messageinabottle-d4dd4.appspot.com",
     messagingSenderId: "791310026035",
-    appId: "1:791310026035:web:8b80fae439993fb6706a46"
+    appId: "1:791310026035:web:8b80fae439993fb6706a46",
 
 };
 
@@ -100,5 +100,5 @@ messageInput.value = '';
 }
 
 function receiveMessage(){
-  
+
 }
