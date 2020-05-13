@@ -100,7 +100,7 @@ createP('send message: {nodeData.messageText}');
 //zero out textarea
 messageInput.value = '';
 
-  sendMessageButton.style.display = 'none';
+  receiveMessageButton.style.display = 'none';
   sendAgainButton.style.display= 'block';
 
 } else {
