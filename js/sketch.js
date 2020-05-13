@@ -32,6 +32,7 @@ function setup() {
 
   sendMessageButton.addEventListener('click', sendMessage);
   receiveMessageButton.addEventListener('click', receiveMessage);
+  sendAgainButton.addEventListener('click', sendAgain);
 
   // Initialize firebase
 // support for Firebase Realtime Database 4 web here: https://firebase.google.com/docs/database/web/start
@@ -99,8 +100,8 @@ createP('send message: {nodeData.messageText}');
 //zero out textarea
 messageInput.value = '';
 
-  receiveDiv.style.display = 'none';
-  sendDiv.style.display= 'block';
+  sendMessageButton.style.display = 'none';
+  sendAgainButton.style.display= 'block';
 
 } else {
   alert("type message first.")
@@ -121,4 +122,9 @@ function receiveMessage(){
 
     }
   }
+  }
+
+  function sendAgain(){
+    receiveDiv.style.display = 'none';
+    sendDiv.style.display= 'block';
   }
