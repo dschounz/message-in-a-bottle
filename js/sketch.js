@@ -17,6 +17,7 @@ function setup() {
   messageInput = document.querySelector("#messageInput");
   sendMessageButton = document.querySelector("#sendMessageButton");
 
+  sendMessageButton.addEventListener('click', sendMessage);
   // Initialize firebase
 // support for Firebase Realtime Database 4 web here: https://firebase.google.com/docs/database/web/start
 // Copy and paste your config here (replace object commented out)
@@ -61,4 +62,8 @@ ref.on('value', gotData, errData);
 
 function draw() {
 
+}
+
+function sendMessage(){
+  console.log('send message');
 }
