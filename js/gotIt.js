@@ -34,3 +34,4 @@ firebase.database().ref(_nodeFolder + '/' + _nodeId).set(_nodeObject);
 // (to test you can just paste it into the web console)
 
 }
+// createNode(folderName, test {text: "hello"});
