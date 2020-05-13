@@ -74,7 +74,13 @@ nodeData= {
 
 }
 
-  createNode(folderName, timestamp, nodeData)
+//push to firebase
+  createNode(folderName, timestamp, nodeData);
+
+createP('send message: {nodeData.messageText}');
+
+//zero out textarea
+messageInput.value = '';
 
 } else {
   alert("type message first.")
