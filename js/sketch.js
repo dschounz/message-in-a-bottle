@@ -13,6 +13,8 @@ let receiveMessageButton;
 let receivedMessage;
 let receiveDiv;
 let sendDiv;
+let sendAgainButton;
+
 
 function setup() {
   noCanvas();
@@ -23,6 +25,7 @@ function setup() {
   sendMessageButton = document.querySelector("#sendMessageButton");
   receiveMessageButton = document.querySelector("#receiveMessageButton");
   receivedMessage = document.querySelector("#receivedMessage");
+  sendAgainButton = document.querySelector("#sendAgainButton");
   receiveDiv = document.querySelector("#receiveDiv");
   sendDiv = document.querySelector("#sendDiv");
 
@@ -96,8 +99,8 @@ createP('send message: {nodeData.messageText}');
 //zero out textarea
 messageInput.value = '';
 
-  receiveDiv.style.display = 'block';
-  sendDiv.style.display= 'none';
+  receiveDiv.style.display = 'none';
+  sendDiv.style.display= 'block';
 
 } else {
   alert("type message first.")
