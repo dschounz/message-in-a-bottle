@@ -13,7 +13,10 @@ let sendMessageButton;
 function setup() {
   noCanvas();
 
-  messageInput = select("#messageInput")
+  //messageInput = select("#messageInput");
+  messageInput = document.QuerySelector("#messageInput");
+  sendMessageButton = document.QuerySelector("#sendMessageButton");
+
   // Initialize firebase
 // support for Firebase Realtime Database 4 web here: https://firebase.google.com/docs/database/web/start
 // Copy and paste your config here (replace object commented out)
@@ -57,4 +60,5 @@ ref.on('value', gotData, errData);
 }
 
 function draw() {
+
 }
