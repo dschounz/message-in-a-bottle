@@ -66,6 +66,7 @@ function draw() {
 
 function sendMessage(){
 
+if (messageInput.value) {
 let timestamp = Date.now();
 nodeData= {
   messageText: messageInput.value,
@@ -74,4 +75,8 @@ nodeData= {
 }
 
   createNode(folderName, timestamp, nodeData)
+
+} else {
+  alert("type message first.")
+}
 }
