@@ -96,8 +96,8 @@ createP('send message: {nodeData.messageText}');
 //zero out textarea
 messageInput.value = '';
 
-  sendDiv.display= 'none';
-  receiveDiv.display = 'block';
+  sendDiv.style.display= 'none';
+  receiveDiv.style.display = 'block';
 
 } else {
   alert("type message first.")
