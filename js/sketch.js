@@ -83,6 +83,8 @@ let timestamp = Date.now();
 nodeData= {
   messageText: messageInput.value,
   timestamp: timestamp,
+  received: false,
+
 
 }
 
@@ -100,5 +102,14 @@ messageInput.value = '';
 }
 
 function receiveMessage(){
+
+  for(let i = 0; i < fbDataArray.length; i++){
+    if(fbDataArray[i].received === false){
+
+    } else {
+      
+    }
+  }
+  }
 
 }
