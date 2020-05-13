@@ -106,10 +106,12 @@ function receiveMessage(){
   for(let i = 0; i < fbDataArray.length; i++){
     if(fbDataArray[i].received === false){
 
+      receivedMessage.innerHTML = fbDataArray[i].messageText;
       updateNode(folderName, fbDataArray[i].timestamp , {received: true});
       break;
 
     } else {
+      receivedMessage.innerHTML = "no more messages out at sea";
 
     }
   }
