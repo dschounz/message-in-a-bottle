@@ -1,4 +1,4 @@
-'use strict';
+
 
 function gotData(data) {
 
@@ -24,7 +24,7 @@ function errData(err) {
 }
 
 // create a new node
-// the node folder name, id, and object are all passed in as parameters
+// the node folder name, id, and object are all passe
 
 function createNode(_nodeFolder, _nodeId, _nodeObject) {
 firebase.database().ref(_nodeFolder + '/' + _nodeId).set(_nodeObject);
@@ -51,4 +51,21 @@ firebase.database().ref(_nodeFolder + '/' + _nodeID).update(_updateObject);
 
 function deleteNode(_nodeFolder, _nodeID) {
 firebase.database().ref(_nodeFolder + '/' + _nodeID).remove();
+}
+function seedDatabase(_array){
+
+  _array.forEach(function(item) {
+    let timestamp = Date.now();
+    nodeData= {
+      messageText: item,
+      timestamp: timestamp,
+      received: false,
+    }
+  });
+
+
+
+  //push to firebase
+    createNode(folderName, timestamp, nodeData);
+
 }
