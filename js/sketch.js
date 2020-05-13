@@ -36,7 +36,7 @@ function setup() {
 // ---> directions on finding config below
 
 // paste your config file here
-let config = {
+//let config = {
    var firebaseConfig = {
     apiKey: "AIzaSyBTSg4Np3pdel_f05GbcrWVqSvCb5SDiCk",
     authDomain: "messageinabottle-d4dd4.firebaseapp.com",
