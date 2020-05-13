@@ -65,5 +65,13 @@ function draw() {
 }
 
 function sendMessage(){
-  console.log('send message');
+
+let timestamp = Date.now();
+nodeData= {
+  messageText: messageInput.value,
+  timestamp: timestamp,
+
+}
+
+  createNode(folderName, timestamp, nodeObject)
 }
