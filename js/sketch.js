@@ -9,15 +9,27 @@ let database; // reference to our firebase database
 let folderName = 'messages'; // name of folder you create in db
 let messageInput;
 let sendMessageButton;
+let receiveMessageButton;
+let receivedMessage;
+let receiveDiv;
+let sendDiv;
 
 function setup() {
   noCanvas();
 
+  // access DOM elements
   //messageInput = select("#messageInput");
   messageInput = document.querySelector("#messageInput");
   sendMessageButton = document.querySelector("#sendMessageButton");
+  receiveMessageButton = document.querySelector("#receiveMessageButton");
+  receivedMessage = document.querySelector("#receivedMessage");
+  receiveDiv = document.querySelector("#receiveDiv");
+  sendDiv = document.querySelector("#sendDiv");
+
 
   sendMessageButton.addEventListener('click', sendMessage);
+  receiveMessageButton.addEventListener('click', receiveMessage);
+
   // Initialize firebase
 // support for Firebase Realtime Database 4 web here: https://firebase.google.com/docs/database/web/start
 // Copy and paste your config here (replace object commented out)
@@ -85,4 +97,8 @@ messageInput.value = '';
 } else {
   alert("type message first.")
 }
+}
+
+function receiveMessage(){
+  
 }
