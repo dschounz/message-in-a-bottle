@@ -73,5 +73,5 @@ nodeData= {
 
 }
 
-  createNode(folderName, timestamp, nodeObject)
+  createNode(folderName, timestamp, nodeData)
 }
