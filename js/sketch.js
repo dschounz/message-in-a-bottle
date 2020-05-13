@@ -125,6 +125,13 @@ function receiveMessage(){
   }
 
   function sendAgain(){
+    //reset receive div
+    receivedMessage.innerHTML = "";
+    receiveMessageButton.style.display = 'block';
+    sendAgainButton.style.display= 'none';
+
+//return to beginning
     receiveDiv.style.display = 'none';
     sendDiv.style.display= 'block';
+
   }
