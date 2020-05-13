@@ -5,6 +5,7 @@
 let nodeData; // object we will push to firebase
 let fbData; // data we pull from firebase
 let fbDataArray; // firebase data values converted to an array
+let fbDataArray; // firebase data values converted to an array
 let database; // reference to our firebase database
 let folderName = 'messages'; // name of folder you create in db
 let messageInput;
@@ -109,6 +110,10 @@ messageInput.value = '';
 }
 
 function receiveMessage(){
+//shuffle Array first
+shuffleArray(fbDataArray);
+
+
 
   for(let i = 0; i < fbDataArray.length; i++){
     if(fbDataArray[i].received === false){
@@ -135,3 +140,20 @@ function receiveMessage(){
     sendDiv.style.display= 'block';
 
   }
+function shuffleArray(_array){
+  // iterate backwards through an array
+for (let i = array.length - 1; i > 0; i--) {
+
+  // grab random index from 0 to i
+  let randomIndex = Math.floor(Math.random() * (i + 1));
+
+  // swap elements array[i] and array[j]
+  [_array[i], _array[randomIndex]] = [_array[randomIndex], _array[i]]; // using "destructuring assignment" syntax
+
+  // same can be written as:
+  // let _arrayItem = _array[i]; // _array item in original position _array[i]
+  // _array[i] = _array[randomIndex]; // overwrite _array[i] with new item at random index
+  // _array[randomIndex] = _arrayItem; // now move _array item from original position into random position
+
+}
+}
