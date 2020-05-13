@@ -5,7 +5,6 @@
 let nodeData; // object we will push to firebase
 let fbData; // data we pull from firebase
 let fbDataArray; // firebase data values converted to an array
-let fbDataArray; // firebase data values converted to an array
 let database; // reference to our firebase database
 let folderName = 'messages'; // name of folder you create in db
 let messageInput;
