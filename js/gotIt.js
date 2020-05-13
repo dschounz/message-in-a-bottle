@@ -2,6 +2,9 @@
 
 function gotData(data) {
 
+  //seed Array (on first time initializing database only)
+  //seedDatabase(fortunes);
+
   // need to retrieve firebase data with val() method
   // this returns an object of all data
   fbData = data.val();
