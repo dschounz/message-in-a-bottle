@@ -106,10 +106,11 @@ function receiveMessage(){
   for(let i = 0; i < fbDataArray.length; i++){
     if(fbDataArray[i].received === false){
 
+      updateNode(folderName, fbDataArray[i].timestamp , {received: true});
+      break;
+
     } else {
-      
+
     }
   }
   }
-
-}
