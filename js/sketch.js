@@ -14,8 +14,8 @@ function setup() {
   noCanvas();
 
   //messageInput = select("#messageInput");
-  messageInput = document.QuerySelector("#messageInput");
-  sendMessageButton = document.QuerySelector("#sendMessageButton");
+  messageInput = document.querySelector("#messageInput");
+  sendMessageButton = document.querySelector("#sendMessageButton");
 
   // Initialize firebase
 // support for Firebase Realtime Database 4 web here: https://firebase.google.com/docs/database/web/start
